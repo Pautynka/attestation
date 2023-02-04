@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto-Regular"),
+    url("/fonts/Roboto-Regular.woff2") format("woff2"),
+    url("/fonts/Roboto-Regular.woff") format("woff");
+    url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
+}
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color:#121212;
+}
+a {text-decoration: none;}
+.container{
+    width:100%;
+    display:flex;
+    max-width:1920px;
+}
+.section-image{background: #121212;}
+.section-image__img{}
+.section-image__img img{
+    object-fit: cover;
+    min-width:638px;
+    width: 100%;
+    height:auto;}
+.section-image__title{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color:#fff;
+    background:#121212;;
+    display:block;
+    width:100%;
+    text-transform: uppercase;
+    text-align:center;
+}
+.section-info{
+    /*max-width:1200px;*/
+    width:100%;
+}
+.section-info__name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    margin:60px 0 10px 0;
+}
+.section-info__city{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color:initial;
+    margin:10px 0 25px 0;
+}
+.section-info__socials{
+    display:flex;
+    flex-direction: row;
+    max-width:430px;
+    justify-content: space-between;
+}
+.section-info__socials__social img{
+    width:40px;
+    height:40px;
+}
+.section-info__socials__social img:hover{opacity:0.5}
+.section-info__stack{margin-top:50px;}
+.section-info__stack, .section-info__stack__title, .section-info__about__title{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+}
+.section-info__stack__title{margin-bottom:10px;}
+.section-info__stack__items{
+    display:flex;
+    flex-direction: row;
+    margin-top:10px;
+    flex-wrap: wrap;
+}
+.section-info__stack-items__item{
+    width: 198px;
+    height: 66px;
+    background: #414141;
+    border-radius: 45px;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right:25px;
+}
+.section-info__stack-items__item:hover{background:#fff; color:#000}
+.section-info__about{margin-top:50px;}
+.section-info__about__title{}
+.section-info__about__blockquote{margin-top:20px;}
+.section-info__form{
+    margin-top:50px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section-info__form__email{margin-right: 25px;}
+.section-info__form__email input, .section-info__form__message input{
+    width: 338px;
+    height: 66px;
+    background: #FFFFFF;
+    border: 1px solid #121212;
+    border-radius: 11px;
+}
+input[type="text"] {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    padding-left:16px;
+    color:#121212;
+}
+.section-info__form__message{}
+.section-info__form__button {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.section-info__form__button:hover{background: #414141;}
+.section-info__form__button{
+    display: flex;
+    margin-top:20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 207px;
+    width: 330px;
+    height: 66px;
+    background: #121212;
+    border-radius: 11px;
+}
+@media screen and (max-width:991px) {
+    .container{
+        justify-content: center;
+        max-width:390px;
+        margin:0 auto;
+        flex-wrap: wrap;
+    }
+    .section-image__img img{width:390px;}
+    .section-image__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-info__name {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-info__city {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .section-info__socials__social img{
+        width: 32px;
+        height: 32px;
+    }
+    .section-info__socials {
+        max-width: 390px;
+    }
+    .section-info__stack__title{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .section-info__stack-items__item{
+        padding: 5px 0px;
+        font-size: 16px;
+        line-height: 19px;
+        width: 110px;
+        height: 35px;
+        margin: 10px;
+    }
+    .section-info__about__title{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .section-info__about__blockquote{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-indent: 30px;
+    }
+    .section-info__form__email, .section-info__form__message{width:168px}
+    .section-info__form__email input, .section-info__form__message input {
+        width:168px;
+        height:35px;
+    }
+    .section-info__form__email{margin-right: 20px;}
+    input[type="text"] {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .section-info__form__button {
+        width: 390px;
+        height: 35px;
+        padding: 0px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1800px){
+    .section-image__img img{min-width:372px;}
+    .section-image__title {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 90px;
+        width: 372px;
+        height: 66px;
+    }
+    .section-info{margin-left:45px;}
+    .section-info__name {
+        margin-top:10px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .section-info__city {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .section-info__stack{margin-top:30px}
+    .section-info__stack__title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-info__stack-items__item{
+        width: 85px;
+        height: 48px;
+        padding: 10px 45px;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 10px 20px 0 0;
+    }
+    .section-info__about{margin-top: 40px;}
+    .section-info__about__title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .section-info__about__blockquote{
+        font-size: 20px;
+        line-height: 23px;
+        text-indent: 30px;
+    }
+    .section-info__form__email, .section-info__form__message{width: 232px;}
+    .section-info__form__email input, .section-info__form__message input {
+        width: 232px;
+        height: 48px;
+    }
+    .section-info__form__email{}
+    input[type="text"] {
+        font-size: 24px;
+        line-height: 28px;}
+    .section-info__form__button {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0px 14px;
+        width: 484px;
+        height: 48px;
+    }
+}
